@@ -1,0 +1,98 @@
+/* variables */
+:root {
+  --dark: #bc827c;
+  --light: #fff6f4;
+}
+
+body {
+  background-color: saddlebrown;
+  color: var(--light);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.controllers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.controller__card {
+  width: 100%;
+  margin: 1rem 2rem;
+}
+
+.controller__title {
+  font-size: 1.8rem;
+}
+
+.controller__buttons {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.timer {
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red);
+  border: 2px solid white !important;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 5px 5px 10px #00000033;
+  margin: 0.5rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button > svg > path {
+  fill: var(--light);
+}
+
+@media (max-width: 860px) {
+  .container {
+    width: 100%;
+  }
+}
